@@ -205,7 +205,7 @@ async function main() {
   console.log(`${colors.cyan}Searching for package.json and package-lock.json files...${colors.reset}\n`);
 
   const packageFiles = findPackageFiles(scanFolder);
-  console.log(`${colors.bold}Checking:${colors.reset} ${packageFiles.length} package files\n`);
+  console.log(`${colors.bold}Scanning:${colors.reset} ${packageFiles.length} package files\n`);
 
   let totalExactMatches = 0;
   let totalDifferentVersions = 0;

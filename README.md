@@ -13,9 +13,7 @@ A tool to scan npm projects for vulnerable packages listed in the Shai-Hulud 2.0
 - ✅ Detailed reporting with file paths
 - ✅ Exit code 1 if exact matches found (useful for CI/CD)
 
-## Available Scripts
-
-### Node.js Version (Recommended)
+## Usage
 
 **Requirements:** Node.js (any version)
 
@@ -32,24 +30,6 @@ Or make it executable and run directly:
 ```bash
 ./scan-vulnerabilities.js shai-hulud-2.0.csv ./my-project
 ```
-
-### Bash Version
-
-**Requirements:** Bash, optionally `jq` for better JSON parsing
-
-```bash
-./scan-vulnerabilities.sh <csv-file> <folder-to-scan>
-```
-
-**Example:**
-```bash
-./scan-vulnerabilities.sh shai-hulud-2.0.csv ./my-project
-```
-
-> **Note:** The bash version works without `jq` but is more accurate and faster when `jq` is installed. Install with:
-> - macOS: `brew install jq`
-> - Ubuntu/Debian: `apt-get install jq`
-> - Others: See [jq installation guide](https://stedolan.github.io/jq/download/)
 
 ## Usage Examples
 
@@ -80,7 +60,7 @@ Loaded: 429 unique vulnerable packages
 Scanning folder: ./my-project
 Searching for package.json and package-lock.json files...
 
-Checking: 3 package files
+Scanning: 3 package files
 
 === FINDINGS ===
 
@@ -122,10 +102,7 @@ posthog-js,1.297.3
 
 ## Performance
 
-- **Node.js version**: Fast, no external dependencies
-- **Bash version**: Slower but works everywhere, faster with `jq` installed
-
-For large projects with many `node_modules`, the scan may take a minute or two.
+For large projects with many `node_modules`, the scan may take a minute or two. The scanner is optimized and has no external dependencies beyond Node.js.
 
 ## Testing
 
@@ -156,6 +133,3 @@ Some directories may not be readable. The scanner will skip these and continue.
 - Ensure the folder contains `package.json` or `package-lock.json` files
 - Check that packages in your project match those in the CSV
 
-### Bash version not working
-- Ensure the script is executable: `chmod +x scan-vulnerabilities.sh`
-- Install `jq` for better accuracy: `brew install jq` (macOS)

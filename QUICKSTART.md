@@ -6,18 +6,14 @@
 cd /Users/nirzoomd.com/development/shai-hulud-tester
 
 # Make scripts executable (if needed)
-chmod +x scan-vulnerabilities.js scan-vulnerabilities.sh run-test.sh
+chmod +x scan-vulnerabilities.js run-test.sh
 ```
 
 ## Basic Usage
 
 ### Scan a project
 ```bash
-# Node.js version (recommended)
 node scan-vulnerabilities.js shai-hulud-2.0.csv /path/to/project
-
-# Bash version
-./scan-vulnerabilities.sh shai-hulud-2.0.csv /path/to/project
 ```
 
 ### Scan current directory
@@ -89,8 +85,7 @@ node scan-vulnerabilities.js shai-hulud-2.0.csv . > scan-results.txt 2>&1
 ## File Structure
 ```
 .
-├── scan-vulnerabilities.js      # Node.js scanner (recommended)
-├── scan-vulnerabilities.sh      # Bash scanner (alternative)
+├── scan-vulnerabilities.js      # Node.js scanner
 ├── run-test.sh                  # Test runner
 ├── shai-hulud-2.0.csv          # Vulnerable packages database
 ├── test-project/                # Test data

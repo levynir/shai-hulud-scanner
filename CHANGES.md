@@ -80,10 +80,8 @@ Created `run-test.sh` which:
 ./run-test.sh
 ```
 
-### 5. Updated Both Scripts
-- **scan-vulnerabilities.js** (Node.js version) - Updated display format
-- **scan-vulnerabilities.sh** (Bash version) - Updated display format
-- Both now show identical output with file paths for each finding
+### 5. Updated Script
+- **scan-vulnerabilities.js** - Updated display format to show file paths for each finding
 
 ### 6. Updated Documentation
 - **README.md** - Updated with new output format example and testing section
@@ -97,7 +95,6 @@ Created `run-test.sh` which:
 ## Files Modified
 - `shai-hulud-2.0.csv` - Added test package entries
 - `scan-vulnerabilities.js` - Updated display format
-- `scan-vulnerabilities.sh` - Updated display format
 - `README.md` - Updated documentation
 
 ## Files Created
