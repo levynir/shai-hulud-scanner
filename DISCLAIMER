@@ -1,0 +1,47 @@
+# DISCLAIMER
+
+## No Warranty
+
+THIS SOFTWARE IS PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED. THE AUTHOR MAKES NO WARRANTIES, EXPRESS OR IMPLIED, INCLUDING WITHOUT LIMITATION THE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE, REGARDING THE SOFTWARE OR ITS USE AND OPERATION ALONE OR IN COMBINATION WITH YOUR PRODUCTS.
+
+## No Liability
+
+IN NO EVENT SHALL THE AUTHOR BE LIABLE FOR ANY SPECIAL, INDIRECT, INCIDENTAL OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION) ARISING IN ANY WAY OUT OF THE USE, REPRODUCTION, MODIFICATION AND/OR DISTRIBUTION OF THE SOFTWARE, HOWEVER CAUSED AND WHETHER UNDER THEORY OF CONTRACT, TORT (INCLUDING NEGLIGENCE), STRICT LIABILITY OR OTHERWISE, EVEN IF THE AUTHOR HAS BEEN ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
+
+## Use at Your Own Risk
+
+- This tool is provided for informational and security assessment purposes only
+- The author takes NO RESPONSIBILITY if the scanner fails to detect vulnerable packages
+- The author takes NO RESPONSIBILITY for false positives or false negatives
+- The author takes NO RESPONSIBILITY for any damages caused by using this tool
+- Users are solely responsible for verifying the results and taking appropriate action
+- The vulnerability database (shai-hulud-2.0.csv) may not be complete or up-to-date
+- This tool does not guarantee detection of all vulnerable packages
+- Always use multiple security tools and manual verification for critical systems
+
+## No Guarantee of Accuracy
+
+- The scanner relies on package names and versions from a third-party dataset
+- The accuracy of results depends on the accuracy of the source data
+- Version matching may not account for all vulnerability scenarios
+- Semantic versioning complexities may result in missed detections
+
+## User Responsibility
+
+By using this software, you acknowledge that:
+- You understand the limitations of automated vulnerability scanning
+- You will verify results independently
+- You will not rely solely on this tool for security decisions
+- You accept all risks associated with using this software
+- You release the author from any and all liability
+
+## Security Advisory
+
+This tool is meant to assist in identifying potentially vulnerable packages. It should be used as part of a comprehensive security strategy, not as the sole method of vulnerability detection.
+
+For production systems, always:
+- Use multiple vulnerability scanning tools
+- Conduct manual security audits
+- Stay informed about security advisories
+- Follow security best practices
+- Consult with security professionals when needed

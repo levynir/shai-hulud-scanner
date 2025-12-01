@@ -2,6 +2,20 @@
 
 A tool to scan npm projects for vulnerable packages listed in the Shai-Hulud 2.0 dataset.
 
+## ⚠️ DISCLAIMER
+
+**THIS SOFTWARE IS PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND. THE AUTHOR TAKES NO RESPONSIBILITY FOR:**
+- False positives or false negatives in vulnerability detection
+- Missed vulnerabilities or inaccurate results
+- Any damages caused by using or relying on this tool
+- The accuracy or completeness of the vulnerability database
+
+**USE AT YOUR OWN RISK.** This tool should be used as part of a comprehensive security strategy, not as the sole method of vulnerability detection. Always verify results independently and consult security professionals for critical systems.
+
+See [DISCLAIMER](DISCLAIMER) for full details.
+
+---
+
 ## Features
 
 - ✅ Scans all `package.json` and `package-lock.json` files recursively
