@@ -23,9 +23,11 @@ echo "Test completed with exit code: $EXIT_CODE"
 echo "============================================"
 echo ""
 echo "Expected results:"
-echo "- 5 EXACT MATCHES (test-vulnerable-package appears twice in root, plus other vulnerable packages)"
-echo "- 1 DIFFERENT VERSION (posthog-js)"
+echo "- 6 EXACT MATCHES (fake vulnerable packages for testing)"
+echo "- 1 DIFFERENT VERSION (mock-compromised-pkg)"
 echo "- Files in: test-project/package.json, test-project/nested/package.json, test-project/nested/node_modules/some-package/package.json"
+echo ""
+echo "Note: All packages in test project are FAKE and for testing only"
 echo ""
 
 exit $EXIT_CODE

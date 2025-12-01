@@ -137,12 +137,14 @@ A test project is included to verify the scanner works correctly after making ch
 ```
 
 This will scan the `test-project` directory which contains:
-- Multiple vulnerable packages including `test-vulnerable-package` (test data)
+- Multiple **FAKE** vulnerable packages for testing purposes only
 - Nested directories with their own `package.json` files
 - A mock `node_modules` structure
 - Both exact matches and different version warnings
 
 Expected output: 6 exact matches and 1 warning across 3 different files.
+
+**⚠️ Security Note:** All packages in `test-project/` are fictitious and created solely for testing. No real vulnerable packages are included to prevent security risks.
 
 ## Troubleshooting
 

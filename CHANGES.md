@@ -57,14 +57,16 @@ test-project/
 - ✅ Different version warnings
 - ✅ Multiple versions of same package
 
-**Vulnerable Packages in Test:**
+**Fake Vulnerable Packages in Test (for testing only - not real):**
 - `test-vulnerable-package@1.0.0` (exact match - in dependencies)
 - `test-vulnerable-package@2.5.0` (exact match - in devDependencies and nested)
-- `@asyncapi/parser@3.4.1` (exact match)
-- `kill-port@2.0.3` (exact match)
-- `coinmarketcap-api@3.1.2` (exact match - in nested)
-- `colors-regex@2.0.1` (exact match - in node_modules)
-- `posthog-js@1.300.0` (different version warning - vulnerable is 1.297.3)
+- `fake-unsafe-lib@3.4.1` (exact match)
+- `test-bad-package@2.0.3` (exact match)
+- `fake-malicious-dep@3.1.2` (exact match - in nested)
+- `test-insecure-module@2.0.1` (exact match - in node_modules)
+- `mock-compromised-pkg@1.300.0` (different version warning - vulnerable is 1.297.3)
+
+**Important Security Note:** All packages in the test project are fake/fictitious and created solely for testing purposes. No real vulnerable packages are included in the test project to prevent security risks.
 
 ### 4. Created Test Runner Script
 Created `run-test.sh` which:
