@@ -52,7 +52,7 @@ while IFS=',' read -r package_name package_version; do
     fi
 done < "$CSV_FILE"
 
-echo -e "${BOLD}Found:${NC} $TOTAL_PACKAGES vulnerable package versions\n"
+echo -e "${BOLD}Loaded:${NC} $TOTAL_PACKAGES vulnerable package versions\n"
 
 echo -e "${BOLD}Scanning folder:${NC} $SCAN_FOLDER"
 echo -e "${CYAN}Searching for package.json and package-lock.json files...${NC}\n"

@@ -75,7 +75,7 @@ node scan-vulnerabilities.js shai-hulud-2.0.csv . || echo "Vulnerabilities detec
 === Shai-Hulud Vulnerability Scanner ===
 
 Loading vulnerable packages from: shai-hulud-2.0.csv
-Found: 429 unique vulnerable packages
+Loaded: 429 unique vulnerable packages
 
 Scanning folder: ./my-project
 Searching for package.json and package-lock.json files...

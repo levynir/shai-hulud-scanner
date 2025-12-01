@@ -199,7 +199,7 @@ async function main() {
   console.log(`${colors.bold}Loading vulnerable packages from:${colors.reset} ${csvPath}`);
 
   const vulnerablePackages = await parseCSV(csvPath);
-  console.log(`${colors.bold}Found:${colors.reset} ${vulnerablePackages.size} unique vulnerable packages\n`);
+  console.log(`${colors.bold}Loaded:${colors.reset} ${vulnerablePackages.size} unique vulnerable packages\n`);
 
   console.log(`${colors.bold}Scanning folder:${colors.reset} ${scanFolder}`);
   console.log(`${colors.cyan}Searching for package.json and package-lock.json files...${colors.reset}\n`);
