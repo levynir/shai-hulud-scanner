@@ -80,7 +80,7 @@ Loaded: 429 unique vulnerable packages
 Scanning folder: ./my-project
 Searching for package.json and package-lock.json files...
 
-Found: 3 package files to scan
+Checking: 3 package files
 
 === FINDINGS ===
 

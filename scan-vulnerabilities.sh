@@ -61,7 +61,7 @@ echo -e "${CYAN}Searching for package.json and package-lock.json files...${NC}\n
 PACKAGE_FILES=$(find "$SCAN_FOLDER" -name "package.json" -o -name "package-lock.json" 2>/dev/null)
 FILE_COUNT=$(echo "$PACKAGE_FILES" | grep -c .)
 
-echo -e "${BOLD}Found:${NC} $FILE_COUNT package files to scan\n"
+echo -e "${BOLD}Checking:${NC} $FILE_COUNT package files\n"
 
 EXACT_MATCHES=0
 DIFFERENT_VERSIONS=0
